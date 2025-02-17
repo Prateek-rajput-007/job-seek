@@ -14,7 +14,7 @@ const JobDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`https://vercel.com/prateeks-projects-ce3bdc61/job-seeker-server/Ae3Px9XFBXdYnJzSsDWwE7RokSJQ/api/v1/job/${id}`, {
+      .get(`https://job-seeker-server-tau.vercel.app/api/v1/job/${id}`, {
         withCredentials: true,
       })
       .then((res) => {
