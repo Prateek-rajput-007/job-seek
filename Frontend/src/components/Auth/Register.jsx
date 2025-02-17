@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://vercel.com/prateeks-projects-ce3bdc61/job-seeker-server/Ae3Px9XFBXdYnJzSsDWwE7RokSJQ/api/v1/user/register",
+        "https://job-seeker-server-tau.vercel.app/api/v1/user/register",
         { name, phone, email, role, password },
         { headers: { "Content-Type": "application/json" }, withCredentials: true }
       );
