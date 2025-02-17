@@ -20,8 +20,8 @@ const MyApplications = () => {
       try {
         const endpoint =
           user?.role === "Employer"
-            ? "http://localhost:4000/api/v1/application/employer/getall"
-            : "http://localhost:4000/api/v1/application/jobseeker/getall";
+            ? "https://vercel.com/prateeks-projects-ce3bdc61/job-seeker-server/Ae3Px9XFBXdYnJzSsDWwE7RokSJQ/api/v1/application/employer/getall"
+            : "https://vercel.com/prateeks-projects-ce3bdc61/job-seeker-server/Ae3Px9XFBXdYnJzSsDWwE7RokSJQ/api/v1/application/jobseeker/getall";
 
         const { data } = await axios.get(endpoint, { withCredentials: true });
         setApplications(data.applications);
@@ -38,7 +38,7 @@ const MyApplications = () => {
   const deleteApplication = async (id) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:4000/api/v1/application/delete/${id}`,
+        `https://vercel.com/prateeks-projects-ce3bdc61/job-seeker-server/Ae3Px9XFBXdYnJzSsDWwE7RokSJQ/api/v1/application/delete/${id}`,
         { withCredentials: true }
       );
       toast.success(data.message);
