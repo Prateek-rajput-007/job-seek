@@ -23,7 +23,7 @@ const Login = () => {
     setIsLoading(true);
     try {
       const { data } = await axios.post(
-        "https://vercel.com/prateeks-projects-ce3bdc61/job-seeker-server/Ae3Px9XFBXdYnJzSsDWwE7RokSJQ/api/v1/user/login",
+        "https://job-seeker-server-tau.vercel.app/api/v1/user/login",
         { email, password, role },
         {
           headers: {
